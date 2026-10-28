@@ -1,0 +1,6 @@
+6a3143f 2026-10-28T19:56:35+08:00 feat: add Designer menus toolbar and promoted line number editor
+1602a89 2026-10-28T20:06:07+08:00 feat: implement safe UTF-8 file editing search and replace
+c4eeacd 2026-10-28T20:09:26+08:00 test: add file safety search undo and dialog integration coverage
+efa9ab4 2026-10-28T20:09:47+08:00 fix: handle empty clipboard MIME data before enabling paste
+13b5714 2026-10-28T20:10:40+08:00 fix: prevent Return from triggering find twice in search dialog
+3665e86 2026-10-28T20:13:09+08:00 docs: add reproducible runtime demo and verified editor screenshots
