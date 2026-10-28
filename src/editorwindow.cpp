@@ -205,6 +205,9 @@ void EditorWindow::showSearch(bool replace) {
         auto *replaceButton = new QPushButton("替换", searchDialog); replaceButton->setObjectName("replaceOneButton");
         auto *allButton = new QPushButton("全部替换", searchDialog); allButton->setObjectName("replaceAllButton");
         auto *closeButton = new QPushButton("关闭", searchDialog);
+        // Return 只由输入框的 returnPressed 分发，避免默认按钮再次触发查找。
+        for (QPushButton *button : {findButton, replaceButton, allButton, closeButton})
+            button->setAutoDefault(false);
         searchStatus = new QLabel(searchDialog); searchStatus->setObjectName("searchStatus");
         layout->addWidget(new QLabel("查找内容", searchDialog), 0, 0); layout->addWidget(findEdit, 0, 1, 1, 3);
         layout->addWidget(replaceLabel, 1, 0); layout->addWidget(replaceEdit, 1, 1, 1, 3);
