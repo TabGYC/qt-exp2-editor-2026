@@ -1,0 +1,7 @@
+build*/
+**/build*/
+*.user
+**/*.user
+evidence/testdata/
+*.autosave
+实验*-*_2026秋.docx
