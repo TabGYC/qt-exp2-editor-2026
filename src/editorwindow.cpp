@@ -86,7 +86,10 @@ EditorWindow::EditorWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::Ed
 }
 EditorWindow::~EditorWindow() { delete ui; }
 CodeEditor *EditorWindow::editor() const { return ui->textEdit; }
-void EditorWindow::updatePaste() { ui->actionPaste->setEnabled(QApplication::clipboard()->mimeData()->hasText()); }
+void EditorWindow::updatePaste() {
+    const QMimeData *data = QApplication::clipboard()->mimeData();
+    ui->actionPaste->setEnabled(data && data->hasText());
+}
 void EditorWindow::updateTitle() {
     setWindowTitle((currentFile.isEmpty() ? "未命名" : QFileInfo(currentFile).fileName()) + "[*] - 文本编辑器");
     setWindowFilePath(currentFile);

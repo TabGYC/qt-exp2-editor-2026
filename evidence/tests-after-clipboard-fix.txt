@@ -1,0 +1,36 @@
+********* Start testing of EditorTest *********
+Config: Using QtTest library 5.15.3, Qt 5.15.3 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 11.3.0), ubuntu 22.04
+PASS   : EditorTest::initTestCase()
+PASS   : EditorTest::utf8SaveAndSaveAs()
+PASS   : EditorTest::failedOpenPreservesDocument()
+PASS   : EditorTest::rejectBinaryAndBadUtf8()
+PASS   : EditorTest::failedSaveRetainsDirtyState()
+PASS   : EditorTest::bomAndEmptyFile()
+PASS   : EditorTest::findWrapAndNotFound()
+PASS   : EditorTest::replaceAllAndUndo()
+PASS   : EditorTest::caseAndWholeWord()
+PASS   : EditorTest::actionAvailability()
+QWARN  : EditorTest::cancelUnsavedClose() This plugin does not support propagateSizeHints()
+QWARN  : EditorTest::cancelUnsavedClose() This plugin does not support propagateSizeHints()
+QWARN  : EditorTest::cancelUnsavedClose() This plugin does not support propagateSizeHints()
+PASS   : EditorTest::cancelUnsavedClose()
+QWARN  : EditorTest::cancelSaveAsKeepsDocument() This plugin does not support propagateSizeHints()
+PASS   : EditorTest::cancelSaveAsKeepsDocument()
+QWARN  : EditorTest::searchDialogEnterOnce() This plugin does not support propagateSizeHints()
+QWARN  : EditorTest::searchDialogEnterOnce() This plugin does not support raise()
+FAIL!  : EditorTest::searchDialogEnterOnce() Compared values are not the same
+   Actual   (w.editor()->textCursor().selectionStart()): 3
+   Expected (0)                                        : 0
+   Loc: [../test_editor.cpp(125)]
+QWARN  : EditorTest::screenshotsAndViewControls() This plugin does not support propagateSizeHints()
+QWARN  : EditorTest::screenshotsAndViewControls() This plugin does not support propagateSizeHints()
+QWARN  : EditorTest::screenshotsAndViewControls() This plugin does not support raise()
+QWARN  : EditorTest::screenshotsAndViewControls() This plugin does not support propagateSizeHints()
+QWARN  : EditorTest::screenshotsAndViewControls() This plugin does not support propagateSizeHints()
+PASS   : EditorTest::screenshotsAndViewControls()
+QWARN  : EditorTest::multipleWindows() This plugin does not support propagateSizeHints()
+QWARN  : EditorTest::multipleWindows() This plugin does not support propagateSizeHints()
+PASS   : EditorTest::multipleWindows()
+PASS   : EditorTest::cleanupTestCase()
+Totals: 15 passed, 1 failed, 0 skipped, 0 blacklisted, 348ms
+********* Finished testing of EditorTest *********
