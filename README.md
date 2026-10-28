@@ -45,3 +45,5 @@ QT_QPA_PLATFORM=offscreen ./demo /绝对路径/演示.mp4 /绝对路径/ffmpeg /
 演示保留真实运行时间和字幕，文件读写使用与菜单共用的接口。
 
 UTF-8 纯文本仅保存文字；字体与颜色是视图设置。行号已实现，选做自动保存未启用。
+
+GitHub 仓库现为公开。报告的 GitHub 日志已改为提交历史网页截图，原图保存在 `evidence/github-commits.jpg`。
