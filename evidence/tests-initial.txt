@@ -1,0 +1,9 @@
+********* Start testing of EditorTest *********
+Config: Using QtTest library 5.15.3, Qt 5.15.3 (x86_64-little_endian-lp64 shared (dynamic) release build; by GCC 11.3.0), ubuntu 22.04
+PASS   : EditorTest::initTestCase()
+QFATAL : EditorTest::utf8SaveAndSaveAs() Received signal 11
+         Function time: 25ms Total time: 26ms
+FAIL!  : EditorTest::utf8SaveAndSaveAs() Received a fatal error.
+   Loc: [Unknown file(0)]
+Totals: 1 passed, 1 failed, 0 skipped, 0 blacklisted, 113ms
+********* Finished testing of EditorTest *********
